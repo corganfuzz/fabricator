@@ -1,28 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  /*font-family: "Segoe UI Web (West European)",Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;*/
+}
+
+/** Main Layout rules */
 .App {
-  text-align: center;
+  min-height: 100vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App .body {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
 }
 
-.App-title {
-  font-size: 1.5em;
+.body .sidebar {
+  order: -1;
 }
 
-.App-intro {
-  font-size: large;
+.body .content {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.body .sidebar {
+  max-width: 22em;
+  flex: 0 0 22em;
+}
+
+.App .header {
+  height: 4em;
+}
+
+.App .footer {
+  height: 4em;
+}
+
+/** Text */
+.text-red {
+  color: red;
+}
+/*.App {
+  background-color: black;
+}*/
+
+.App .header {
+  background-color: blue;
+}
+
+.App .body {
+  background-color: red;
+}
+
+.App .body .content {
+  background-color: green;
+}
+
+.App .body .sidebar {
+  background-color: yellow;
+}
+
+.App .footer {
+  background-color: grey;
 }
