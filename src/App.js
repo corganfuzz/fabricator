@@ -4,6 +4,7 @@ import "./App.css";
 import { Fabric } from "office-ui-fabric-react/lib/Fabric";
 import MenuSideBar from './components/MenuSideBar';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 import { initializeIcons } from '@uifabric/icons';
 
@@ -24,7 +25,9 @@ class App extends Component {
               <MenuSideBar />
             </div>
           </div>
-          <div className="footer" />
+          <div className="footer">
+            <Footer />
+          </div>
         </div>
       </Fabric>
     );
